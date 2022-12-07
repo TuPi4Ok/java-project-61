@@ -10,6 +10,7 @@ public class App {
                     + "1 - Greet\n"
                     + "2 - Even\n"
                     + "3 - Calc\n"
+                    + "4 - GCD\n"
                     + "0 - Exit\n"
                     + "Your choice:");
             var choice = Integer.parseInt(scanner.next());
@@ -26,6 +27,10 @@ public class App {
                 case 3:
                     //игра калькулятор
                     Calculator.start();
+                    break;
+                case 4:
+                    //игра НОД
+                    GCD.start();
                     break;
                 case 0:
                     exit = false;

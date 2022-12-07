@@ -11,6 +11,7 @@ public class Calculator {
         Scanner scanner = new Scanner(System.in);
 
         var name = Engine.hello();
+
         System.out.println("What is the result of the expression?");
         for (int i = 0; i < 3; i++) {
             var num1 = random.nextInt(0, 100);
