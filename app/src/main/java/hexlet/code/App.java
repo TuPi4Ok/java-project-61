@@ -11,6 +11,7 @@ public class App {
                     + "2 - Even\n"
                     + "3 - Calc\n"
                     + "4 - GCD\n"
+                    + "5 - Progression\n"
                     + "0 - Exit\n"
                     + "Your choice:");
             var choice = Integer.parseInt(scanner.next());
@@ -31,6 +32,10 @@ public class App {
                 case 4:
                     //игра НОД
                     GCD.start();
+                    break;
+                case 5:
+                    //игра прогрессия
+                    Progression.start();
                     break;
                 case 0:
                     exit = false;
