@@ -11,7 +11,7 @@ public class Calculator {
         Scanner scanner = new Scanner(System.in);
 
         var name = Engine.hello();
-        System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
+        System.out.println("What is the result of the expression?");
         for (int i = 0; i < 3; i++) {
             var num1 = random.nextInt(0, 100);
             var num2 = random.nextInt(0, 100);
