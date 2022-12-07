@@ -4,23 +4,31 @@ import hexlet.code.Engine;
 import java.util.Random;
 import java.util.Scanner;
 
-public class ParityCheck {
+public class Prime {
+
+    private static boolean isPrime(int num) {
+        for (int i = 2; i < num; i++){
+            if (num % i == 0)
+                return false;
+        }
+        return true;
+    }
     public static void start() {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
 
         var name = Engine.hello();
-        System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
+        System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
+
         for (int i = 0; i < 3; i++) {
             var num = random.nextInt(0, 100);
             System.out.print("Question: " + num + "\n"
                     + "Your answer: ");
-
             var answer = scanner.next();
 
-            if(num % 2 == 0 && answer.equals("yes"))
+            if(isPrime(num) && answer.equals("yes"))
                 System.out.println("Correct!");
-            else if (num % 2 != 0 && answer.equals("no"))
+            else if (!isPrime(num) && answer.equals("no"))
                 System.out.println("Correct!");
             else {
                 if(answer.equals("yes"))

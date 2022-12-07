@@ -15,7 +15,7 @@ public class GCD {
         for (int i = 0; i < 3; i++) {
             var num1 = random.nextInt(0, 100);
             var num2 = random.nextInt(0, num1);
-            System.out.println("Question:" + num1 + " " + num2 + "\n"
+            System.out.print("Question: " + num1 + " " + num2 + "\n"
                     + "Your answer: ");
             var answer = scanner.nextInt();
 

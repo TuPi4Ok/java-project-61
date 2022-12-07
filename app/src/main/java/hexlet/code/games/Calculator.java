@@ -18,13 +18,13 @@ public class Calculator {
             var num2 = random.nextInt(0, 100);
             var oper = random.nextInt(0, 2);
             if (oper == 0)
-                System.out.println("Question:" + num1 + " + " + num2 + "\n"
+                System.out.print("Question: " + num1 + " + " + num2 + "\n"
                         + "Your answer: ");
             else if (oper == 1)
-                System.out.println("Question:" + num1 + " - " + num2 + "\n"
+                System.out.print("Question: " + num1 + " - " + num2 + "\n"
                         + "Your answer: ");
             else
-                System.out.println("Question:" + num1 + " * " + num2 + "\n"
+                System.out.print("Question: " + num1 + " * " + num2 + "\n"
                         + "Your answer: ");
 
             var answer = scanner.nextInt();

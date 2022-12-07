@@ -6,14 +6,15 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         var exit = true;
         while (exit) {
-            System.out.println("Please enter the game number and press Enter.\n"
+            System.out.print("Please enter the game number and press Enter.\n"
                     + "1 - Greet\n"
                     + "2 - Even\n"
                     + "3 - Calc\n"
                     + "4 - GCD\n"
                     + "5 - Progression\n"
+                    + "6 - Prime\n"
                     + "0 - Exit\n"
-                    + "Your choice:");
+                    + "Your choice: ");
             var choice = Integer.parseInt(scanner.next());
 
             switch (choice) {
@@ -36,6 +37,10 @@ public class App {
                 case 5:
                     //игра прогрессия
                     Progression.start();
+                    break;
+                case 6:
+                    //игра простые числа
+                    Prime.start();
                     break;
                 case 0:
                     exit = false;
