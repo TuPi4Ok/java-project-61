@@ -4,3 +4,5 @@
 <a href="https://asciinema.org/a/9dV48mvNMISY3oKRRaqE76beM" target="_blank"><img src="https://asciinema.org/a/9dV48mvNMISY3oKRRaqE76beM.svg" /></a>
 # Game - calculator
 <a href="https://asciinema.org/a/GM0ALxrSbi0bL0tpWzrfoLoDh" target="_blank"><img src="https://asciinema.org/a/GM0ALxrSbi0bL0tpWzrfoLoDh.svg" /></a>
+# Game - GCD
+<a href="https://asciinema.org/a/CNfEtSlf3XxQHH6k23sPv5sLI" target="_blank"><img src="https://asciinema.org/a/CNfEtSlf3XxQHH6k23sPv5sLI.svg" /></a>
