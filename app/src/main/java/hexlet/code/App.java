@@ -16,7 +16,7 @@ public class App {
                     + "0 - Exit\n"
                     + "Your choice: ");
             var choice = Integer.parseInt(scanner.next());
-
+            System.out.print("\n")
             switch (choice) {
                 case 1:
                     //приветствие
