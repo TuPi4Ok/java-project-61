@@ -14,9 +14,9 @@ public class Calculator {
 
         System.out.println("What is the result of the expression?");
         for (int i = 0; i < Engine.getGameValue(); i++) {
-            var lowIndex = 0;
-            var heightIndex = 100;
-            var operHightIndex = 2;
+            final var lowIndex = 0;
+            final var heightIndex = 100;
+            final var operHightIndex = 2;
             var num1 = random.nextInt(lowIndex, heightIndex);
             var num2 = random.nextInt(lowIndex, heightIndex);
             var oper = random.nextInt(lowIndex, operHightIndex);

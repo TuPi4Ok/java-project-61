@@ -22,8 +22,8 @@ public class Prime {
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
 
         for (int i = 0; i < Engine.getGameValue(); i++) {
-            var lowIndex = 0;
-            var heightIndex = 100;
+            final var lowIndex = 0;
+            final var heightIndex = 100;
             var num = random.nextInt(lowIndex, heightIndex);
             System.out.print("Question: " + num + "\n"
                     + "Your answer: ");

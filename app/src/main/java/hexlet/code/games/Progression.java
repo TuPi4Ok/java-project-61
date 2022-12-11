@@ -13,11 +13,11 @@ public class Progression {
         System.out.println("What number is missing in the progression?");
 
         for (int i = 0; i < Engine.getGameValue(); i++) {
-            var lowIndex0 = 0;
-            var lowIndex5 = 5;
-            var heightIndex10 = 10;
-            var heightIndex30 = 30;
-            var heightIndex1 = 1;
+            final var lowIndex0 = 0;
+            final var lowIndex5 = 5;
+            final var heightIndex10 = 10;
+            final var heightIndex30 = 30;
+            final var heightIndex1 = 1;
             var n = random.nextInt(lowIndex5, heightIndex10);
             var prog = new int[n];
             var step = random.nextInt(heightIndex1, heightIndex10);
