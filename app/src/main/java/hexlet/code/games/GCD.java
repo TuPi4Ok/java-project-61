@@ -13,8 +13,8 @@ public class GCD {
         System.out.println("Find the greatest common divisor of given numbers.");
 
         for (int i = 0; i < 3; i++) {
-            var num1 = random.nextInt(0, 100);
-            var num2 = random.nextInt(0, num1);
+            var num1 = random.nextInt(1, 100);
+            var num2 = random.nextInt(1, num1);
             System.out.print("Question: " + num1 + " " + num2 + "\n"
                     + "Your answer: ");
             var answer = scanner.nextInt();
