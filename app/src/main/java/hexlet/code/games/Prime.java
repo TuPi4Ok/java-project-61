@@ -7,9 +7,10 @@ import java.util.Scanner;
 public class Prime {
 
     private static boolean isPrime(int num) {
-        for (int i = 2; i < num; i++){
-            if (num % i == 0)
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
                 return false;
+            }
         }
         return true;
     }
@@ -26,21 +27,23 @@ public class Prime {
                     + "Your answer: ");
             var answer = scanner.next();
 
-            if(isPrime(num) && answer.equals("yes"))
+            if (isPrime(num) && answer.equals("yes")) {
                 System.out.println("Correct!");
-            else if (!isPrime(num) && answer.equals("no"))
+            } else if (!isPrime(num) && answer.equals("no")) {
                 System.out.println("Correct!");
-            else {
-                if(answer.equals("yes"))
+            } else {
+                if (answer.equals("yes")) {
                     System.out.println("'yes' is wrong answer ;(. Correct answer was 'no'.\n"
                             + "Let's try again, " + name + "!");
-                else
+                } else {
                     System.out.println("'no' is wrong answer ;(. Correct answer was 'yes'.\n"
                             + "Let's try again, " + name + "!");
+                }
                 break;
             }
-            if(i == 2)
+            if (i == 2) {
                 System.out.println("Congratulations, " + name + "!");
+            }
         }
     }
 }

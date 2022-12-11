@@ -18,21 +18,23 @@ public class ParityCheck {
 
             var answer = scanner.next();
 
-            if(num % 2 == 0 && answer.equals("yes"))
+            if (num % 2 == 0 && answer.equals("yes")) {
                 System.out.println("Correct!");
-            else if (num % 2 != 0 && answer.equals("no"))
+            } else if (num % 2 != 0 && answer.equals("no")) {
                 System.out.println("Correct!");
-            else {
-                if(answer.equals("yes"))
+            } else {
+                if (answer.equals("yes")) {
                     System.out.println("'yes' is wrong answer ;(. Correct answer was 'no'.\n"
                             + "Let's try again, " + name + "!");
-                else
+                } else {
                     System.out.println("'no' is wrong answer ;(. Correct answer was 'yes'.\n"
                             + "Let's try again, " + name + "!");
-                break;
+                    break;
+                }
             }
-            if(i == 2)
+            if (i == 2) {
                 System.out.println("Congratulations, " + name + "!");
+            }
         }
     }
 }
