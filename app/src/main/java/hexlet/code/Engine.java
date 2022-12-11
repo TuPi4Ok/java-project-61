@@ -13,6 +13,7 @@ public class Engine {
         return name;
     }
     public static int getGameValue() {
-        return 3;
+        final var gameValue = 3;
+        return gameValue;
     }
 }
