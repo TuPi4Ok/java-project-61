@@ -29,8 +29,8 @@ public class ParityCheck {
                 } else {
                     System.out.println("'no' is wrong answer ;(. Correct answer was 'yes'.\n"
                             + "Let's try again, " + name + "!");
-                    break;
                 }
+                break;
             }
             if (i == 2) {
                 System.out.println("Congratulations, " + name + "!");
