@@ -12,4 +12,7 @@ public class Engine {
         System.out.println("\nHello, " + name + "!");
         return name;
     }
+    public static int getGameValue() {
+        return 3;
+    }
 }

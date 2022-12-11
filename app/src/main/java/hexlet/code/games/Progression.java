@@ -12,12 +12,17 @@ public class Progression {
         var name = Engine.hello();
         System.out.println("What number is missing in the progression?");
 
-        for (int i = 0; i < 3; i++) {
-            var n = random.nextInt(5, 10);
+        for (int i = 0; i < Engine.getGameValue(); i++) {
+            var lowIndex0 = 0;
+            var lowIndex5 = 5;
+            var heightIndex10 = 10;
+            var heightIndex30 = 30;
+            var heightIndex1 = 1;
+            var n = random.nextInt(lowIndex5, heightIndex10);
             var prog = new int[n];
-            var step = random.nextInt(1, 10);
-            var concealment = random.nextInt(0, n);
-            prog[0] = random.nextInt(0, 30);
+            var step = random.nextInt(heightIndex1, heightIndex10);
+            var concealment = random.nextInt(lowIndex0, n);
+            prog[0] = random.nextInt(lowIndex0, heightIndex30);
 
             for (int j = 1; j < n; j++) {
                 prog[j] = prog[j - 1] + step;
@@ -38,8 +43,8 @@ public class Progression {
             if (answer == prog[concealment]) {
                 System.out.println("Correct!");
             } else {
-                System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '" + prog[concealment] + "'.\n"
-                        + "Let's try again, " + name + "!");
+                System.out.print("'" + answer + "' is wrong answer ;(. Correct answer was '" + prog[concealment] + "'.\n");
+                System.out.println("Let's try again, " + name + "!");
                 break;
             }
             if (i == 2) {

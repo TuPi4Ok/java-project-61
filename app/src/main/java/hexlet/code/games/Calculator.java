@@ -13,10 +13,13 @@ public class Calculator {
         var name = Engine.hello();
 
         System.out.println("What is the result of the expression?");
-        for (int i = 0; i < 3; i++) {
-            var num1 = random.nextInt(0, 100);
-            var num2 = random.nextInt(0, 100);
-            var oper = random.nextInt(0, 2);
+        for (int i = 0; i < Engine.getGameValue(); i++) {
+            var lowIndex = 0;
+            var heightIndex = 100;
+            var operHightIndex = 2;
+            var num1 = random.nextInt(lowIndex, heightIndex);
+            var num2 = random.nextInt(lowIndex, heightIndex);
+            var oper = random.nextInt(lowIndex, operHightIndex);
             if (oper == 0) {
                 System.out.print("Question: " + num1 + " + " + num2 + "\n"
                         + "Your answer: ");
@@ -31,8 +34,7 @@ public class Calculator {
             var answer = scanner.nextInt();
             if (num1 + num2 == answer && oper == 0 || num1 - num2 == answer && oper == 1 || num1 * num2 == answer && oper == 2) {
                 System.out.println("Correct!");
-            }
-            else {
+            } else {
                 var otvet = oper == 0 ? num1 + num2 : oper == 1 ? num1 - num2 : num1 * num2;
                 System.out.println("'" + answer + "' is wrong answer ;(. Correct answer was '" + otvet + "'.\n"
                         + "Let's try again, " + name + "!");
