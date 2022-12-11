@@ -16,7 +16,7 @@ public class GCD {
             var lowIndex = 2;
             var heightIndex = 100;
             var num1 = random.nextInt(lowIndex, heightIndex);
-            var num2 = random.nextInt(lowIndex-1, num1);
+            var num2 = random.nextInt(lowIndex - 1, num1);
             System.out.print("Question: " + num1 + " " + num2 + "\n"
                     + "Your answer: ");
             var answer = scanner.nextInt();
@@ -24,7 +24,8 @@ public class GCD {
             if (answer == findGCD(num1, num2)) {
                 System.out.println("Correct!");
             } else {
-                System.out.print("'" + answer + "' is wrong answer ;(. Correct answer was '" + findGCD(num1, num2) + "'.\n");
+                System.out.print("'" + answer + "' is wrong answer ;(. Correct answer was '");
+                System.out.print(findGCD(num1, num2) + "'.\n");
                 System.out.println("Let's try again, " + name + "!");
                 break;
             }

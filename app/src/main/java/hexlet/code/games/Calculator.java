@@ -32,7 +32,9 @@ public class Calculator {
             }
 
             var answer = scanner.nextInt();
-            if (num1 + num2 == answer && oper == 0 || num1 - num2 == answer && oper == 1 || num1 * num2 == answer && oper == 2) {
+            if (num1 + num2 == answer && oper == 0 || num1 * num2 == answer && oper == 2) {
+                System.out.println("Correct!");
+            } else if (num1 - num2 == answer && oper == 1) {
                 System.out.println("Correct!");
             } else {
                 var otvet = oper == 0 ? num1 + num2 : oper == 1 ? num1 - num2 : num1 * num2;

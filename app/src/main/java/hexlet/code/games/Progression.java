@@ -43,7 +43,8 @@ public class Progression {
             if (answer == prog[concealment]) {
                 System.out.println("Correct!");
             } else {
-                System.out.print("'" + answer + "' is wrong answer ;(. Correct answer was '" + prog[concealment] + "'.\n");
+                System.out.print("'" + answer + "' is wrong answer ;(. Correct answer was '");
+                System.out.print(prog[concealment] + "'.\n");
                 System.out.println("Let's try again, " + name + "!");
                 break;
             }
