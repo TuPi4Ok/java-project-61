@@ -20,31 +20,27 @@ public class App {
                     Your choice:\s""");
             var choice = Integer.parseInt(scanner.next());
             System.out.print("\n");
-            switch (choice) {
-                case 1 ->
-                    //приветствие
-                        Engine.hello();
-                case 2 ->
-                    //игра четность
-                        ParityCheck.start();
-                case 3 ->
-                    //игра калькулятор
-                        Calculator.start();
-                case 4 ->
-                    //игра НОД
-                        GCD.start();
-                case 5 ->
-                    //игра прогрессия
-                        Progression.start();
-                case 6 ->
-                    //игра простые числа
-                        Prime.start();
-                case 0 -> {
-                    return;
-                }
-                default -> {
-                    return;
-                }
+            if (choice == 1) {
+                //приветствие
+                Engine.hello();
+            } else if (choice == 2) {
+                //игра четность
+                ParityCheck.start();
+            } else if (choice == 3) {
+                //игра калькулятор
+                Calculator.start();
+            } else if (choice == 4) {
+                //игра НОД
+                GCD.start();
+            } else if (choice == 5) {
+                //игра прогрессия
+                Progression.start();
+            } else if (choice == 6) {
+                //игра простые числа
+                Prime.start();
+            } else if (choice == 0) {
+                return;
             }
+            return;
     }
 }
